@@ -97,7 +97,7 @@ We can see that the number of unpaid reviews is much larger, almost 98% of the r
 -----
 ![five star](https://github.com/GabrielaTuma/Amazon_Vine_Analysis/blob/4f6e414f47ca5d35164c92e5ff262663e2ac9f00/Resources/Challenge%2016%20Images%20/five_star_count.png)
 
-It's hard to take a conclusion by looking at the absolute number of 5-star reviews once we already know that only about 2% of the votes come from Vine members. Having that in mind, the percentages of 5-star reviews compared to total reviews per category were calculated to test if Vine members tend to be more positive because the program is paid. 
+It's hard to take a conclusion by looking at the absolute number of 5-star reviews once we already know that only about 2% of the votes come from vine members. Having that in mind, the percentages of 5-star reviews compared to total reviews per category were calculated to test if vine members tend to be more positive because the program is paid. 
 
 
 ![percentages](https://github.com/GabrielaTuma/Amazon_Vine_Analysis/blob/b311d2955b6a8644ce6760b5d639bfea5727756e/Resources/Challenge%2016%20Images%20/percentages.png)
@@ -106,9 +106,9 @@ It's hard to take a conclusion by looking at the absolute number of 5-star revie
 
 The last two numbers calculated represent the percentage of 5-star reviews for each category individually. We can see that 5-star reviews represent around 34% of the vine dataframe and 48% of the unpaid dataframe. 
 
-It’s clear that the percentage of vine 5-star reviews is lower (one third) compared to unpaid ones, almost half of the total, suggesting that there’s not a positivity bias for reviews in the Vine program. If anything, Vine members are even more critical once the review is not something so casual. 
+It’s clear that the percentage of vine 5-star reviews is lower (one third) compared to unpaid ones (almost half of the total) suggesting that there’s not a positivity bias for reviews in the Vine program. If anything, vine members are even more critical once the review is not something so casual. 
 
 
 Only one category, toys, is being analyzed in this project. Even though the sample size is decent, with more than 60 thousand reviews, it’s important to state that the results might have a category bias. The same analysis should be done with different datasets (using the same code) to validate that vine reviews do not have a positivity bias. 
 
-Also, using the same dataset, 
+Also, if the category of toys is the main interest of the analysis, more can be done using the same dataset. Maybe vine members do have a response bias, but we can' see it only filtering the 5-star reviews. The dataset also includes columns like verified_purchase and review_body that can be further studied. 
