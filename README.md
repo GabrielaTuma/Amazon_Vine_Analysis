@@ -7,7 +7,7 @@ The goal of this project is to analyze Amazon reviews written by members and non
 
 The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.
 
-SellBy stakeholders are looking for an analysis that will determine if there is any bias toward favorable reviews from Vine members in the dataset. In this particular analysis we are going to use reviews provided by Amazon AWS regarding **toys**:
+SellBy stakeholders are looking for an analysis that will determine if there is any bias toward favourable reviews from Vine members in the dataset. In this particular analysis we are going to use reviews provided by Amazon AWS regarding **toys**:
 
 [Amazon Review Datasets](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) 
 
@@ -97,17 +97,18 @@ We can see that the number of unpaid reviews is much larger, almost 98% of the r
 -----
 ![five star](https://github.com/GabrielaTuma/Amazon_Vine_Analysis/blob/4f6e414f47ca5d35164c92e5ff262663e2ac9f00/Resources/Challenge%2016%20Images%20/five_star_count.png)
 
-It's hard to take a conclusion by looking at the absolute number of 5-star reviews once we already know that only about 2% of the votes come from Vine members. Having that in mind, the percentages of 5-star reviews compared to total votes per category were calculated to test if Vine members tend to be more positive because the review is paid. 
+It's hard to take a conclusion by looking at the absolute number of 5-star reviews once we already know that only about 2% of the votes come from Vine members. Having that in mind, the percentages of 5-star reviews compared to total reviews per category were calculated to test if Vine members tend to be more positive because the program is paid. 
 
 
 ![percentages](https://github.com/GabrielaTuma/Amazon_Vine_Analysis/blob/b311d2955b6a8644ce6760b5d639bfea5727756e/Resources/Challenge%2016%20Images%20/percentages.png)
 
 
 
+The last two numbers calculated represent the percentage of 5-star reviews for each category individually. We can see that 5-star reviews represent around 34% of the vine dataframe and 48% of the unpaid dataframe. 
 
-Results: Using bulleted lists and images of DataFrames as support, address the following questions:
+It’s clear that the percentage of vine 5-star reviews is lower (one third) compared to unpaid ones, almost half of the total, suggesting that there’s not a positivity bias for reviews in the Vine program. If anything, Vine members are even more critical once the review is not something so casual. 
 
 
+Only one category, toys, is being analyzed in this project. Even though the sample size is decent, with more than 60 thousand reviews, it’s important to state that the results might have a category bias. The same analysis should be done with different datasets (using the same code) to validate that vine reviews do not have a positivity bias. 
 
-Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
-
+Also, using the same dataset, 
